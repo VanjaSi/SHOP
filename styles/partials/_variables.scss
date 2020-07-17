@@ -1,0 +1,32 @@
+$bkg-color: #eee;
+$bkg-light: #fff;
+$main-color: #333;
+$link-color: #666;
+$link-hover: #000;
+$nav-active: #acdacf;
+$footer-background: #85C3DC;
+$footer-color: #598191;
+
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);

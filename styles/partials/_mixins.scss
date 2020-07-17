@@ -1,0 +1,40 @@
+@mixin nav-underline() {
+    content: " ";
+    width: 0;
+    display: block;
+    height: 2px;
+    background:$nav-active;
+    transition: width 0.4s;
+}
+
+@mixin frame-before(){
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    z-index: 5;
+
+
+
+}
+
+@mixin frame-after(){
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    z-index: 5;
+
+
+
+}

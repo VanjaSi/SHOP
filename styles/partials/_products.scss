@@ -1,0 +1,62 @@
+.product-holder{
+    article.product{
+        .img-holder{
+            // width: 300px;
+            position: relative;
+            overflow: hidden;
+            ul.icon-holder{
+                background-color: transparentize($color: $footer-background, $amount: 0.1);
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+            .icons > li:hover{
+                transform: scale(1.2);
+                transition: transform 0.3s ease;
+            }
+        }
+        .article-info{
+            padding: 10px 0;
+            h2{
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+            span{
+                font-size: 14px;
+
+            }
+        }
+        .color-picker{
+            >li{
+                width: 20px;
+                height: 20px;
+                background-color:red;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(min-width:992px){
+    .product-holder article.product .img-holder {
+        ul.icon-holder{
+            
+            bottom: -60px;
+            transition: all 0.3s ease;   
+        }
+        &:hover{
+            opacity: 0.6;
+            ul.icon-holder{
+                bottom: 0;
+        
+            }
+        }
+         
+    }
+    
+    
+   
+}

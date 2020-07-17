@@ -1,0 +1,182 @@
+
+.main-header{
+    // max-width: 100%;
+    .top-header{
+        min-height: 25px;
+        margin: 10px;
+        width: 100%;
+    }
+    .nav-container{
+        background-color: $bkg-light;
+        margin: 10px 0;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        .navbar{
+            position: relative;
+
+            padding:0;
+            button.navbar-toggler{
+                border: none;
+                outline: none;
+              
+                span.navbar-toggler-icon{
+                    width: 20px;
+                    height: 30px;
+
+                }
+                
+                &:hover, &:active, &:focus .navbar-toggler-icon{
+                    outline: 0;
+    
+                }
+            }
+            .navbar-collapse{
+                text-align: center;
+                margin: 5px 0;
+            }
+            .logo{
+                position: absolute;
+                top: -3px;
+                left: 50px;
+                a img{
+                    width: 67px;
+                }
+            }
+
+            .search-cart-holder{
+                justify-content: flex-end;
+                .search-form{
+                    position: relative;
+                    
+                    .search-input{
+                        width: 100px;
+                        border: none;
+                        border-bottom: 1px solid lighten($color: $main-color, $amount: 50);
+                        border-radius: 0;
+                        margin-right: 8px;
+
+                    }
+                    button.search-btn{
+    
+                        position: absolute;
+                        bottom: -7px;
+                        right: 0px;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url("../img/search-icon.png");
+                        background-repeat: no-repeat;
+                        &:focus {
+                            outline: none;
+                          }
+                          &:active {
+                            box-shadow: none;
+                          }
+                    }
+                    
+                }
+                .cart{
+                    position: relative;
+                    margin-right: 5px;
+                    .item-count{
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        background-color: #e71111;
+                        color: $bkg-light;
+                        font-size: 10px;
+                        border-radius: 50%;
+                        bottom: 6px;
+                        right: 5px;
+                    }
+                  
+                }
+            }
+          
+        }
+      
+    }
+}
+
+
+@media(min-width:400px){
+    .main-header .nav-container .navbar .search-cart-holder .search-form .search-input{
+        width: 140px;
+    }
+}
+
+
+@media(min-width:576px){
+    .main-header .nav-container .navbar .search-cart-holder .search-form button.search-btn{
+        bottom: 3px;
+    }
+}
+@media(min-width:768px){
+    .main-header .nav-container{
+        margin: 10px 0 0 ;
+        position: relative;
+        padding: 36px 0;
+
+        .navbar .logo {
+            position: absolute;
+            top: 3px;
+            left: 6px;
+        }
+        .navbar .search-cart-holder{
+            position: absolute;
+            right: 0;
+            top: -36px;
+
+        }
+        .navbar-expand-md .navbar-collapse{
+            justify-content: flex-end;
+            margin-top: 15px ;
+            .navbar-nav .nav-item a.nav-link::after{
+               @include nav-underline();
+                
+            }
+            .nav-item a.nav-link:hover::after{
+                width: 100%;
+            }
+            
+        }
+       
+    }
+}
+
+
+@media(min-width:992px){
+    .navbar-expand-md .navbar-collapse{
+        
+        margin-top: 15px ;
+        .navbar-nav{
+            position: absolute;
+            left: 200px;
+        }
+        // .navbar-nav .nav-item a.nav-link:hover {
+        //     color:$link-hover;
+        //     // border-bottom: 2px solid $nav-active;
+        //     // transition: color 0.3s ease-in;
+        // }
+    }
+    .main-header .nav-container .navbar {
+
+        .search-cart-holder {
+            
+            top: -12px;
+            .cart .item-count{
+                right: 6px;
+                bottom:-1px;
+            }
+        }
+        .logo{
+        
+            top: -12px;
+           a img{
+                width: 100px;
+            }
+        }
+    }
+    
+    
+}

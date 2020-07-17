@@ -1,0 +1,68 @@
+.header-intro{
+    position: relative;
+    .img-holder{
+      
+      .background-img{
+          width: 100%;
+      }
+    }
+    .header-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-transform: uppercase;
+        color: #f0cc55;
+        text-shadow: rgba($main-color, $alpha: 0.6);
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        -webkit-text-stroke: 2px #fff;
+        span{
+            display: block;
+            color: $bkg-light;
+            font-size: 1.5rem; 
+            letter-spacing: 1px;
+            -webkit-text-stroke: 2px $main-color;
+        
+        }
+       
+        
+    }
+}
+.carousel{
+
+    
+    .carousel-indicators li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .carousel-control-prev-icon{
+        background-image: url("../../img/arrow-left.png");
+    }
+    .carousel-control-next-icon{
+        background-image: url("../../img/arrow-right.png");
+    }
+}
+
+
+@media(min-width: 768px){
+
+    .header-title{
+       
+        font-size: 8rem;
+        background-color: rgba($main-color, $alpha:0.4);
+        padding: 20px 100px;
+      
+        &::before{
+           @include frame-before();
+           width: 60px;
+        }
+        &::after{
+           @include frame-after();
+           width: 60px;
+            
+        }
+    }
+}
