@@ -1,9 +1,9 @@
 .header-intro{
     position: relative;
     .img-holder{
-      
       .background-img{
           width: 100%;
+          height: 400px;
       }
     }
     .header-title{
@@ -25,13 +25,12 @@
             -webkit-text-stroke: 2px $main-color;
         
         }
-       
-        
     }
 }
+
+
 .carousel{
 
-    
     .carousel-indicators li{
         width: 10px;
         height: 10px;

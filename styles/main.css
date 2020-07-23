@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  font-family: 'Istok', sans-serif;
   background-color: #eee;
   color: #333;
   margin: 0;
@@ -208,13 +209,14 @@ a:hover {
 }
 
 .welcome-info .welcome-title {
-  font-size: 14px;
+  font-size: 16px;
   padding: 0;
 }
 
 .welcome-info .welcome-text {
   font-size: 12px;
   padding: 0;
+  letter-spacing: 1.5px;
 }
 
 .collection-wrapper .collection-holder {
@@ -286,6 +288,13 @@ a:hover {
     -webkit-transform: translate(-10px, -10px);
             transform: translate(-10px, -10px);
   }
+  .welcome-info .welcome-title {
+    font-size: 18px;
+  }
+  .welcome-info .welcome-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
 }
 
 .header-intro {
@@ -294,6 +303,7 @@ a:hover {
 
 .header-intro .img-holder .background-img {
   width: 100%;
+  height: 400px;
 }
 
 .header-intro .header-title {
@@ -426,7 +436,6 @@ a:hover {
 
 .main-footer {
   background-color: #85C3DC;
-  padding: 20px 0;
 }
 
 .main-footer .footer-top h3, .main-footer .footer-top h4, .main-footer .footer-top p, .main-footer .footer-top a {
@@ -451,16 +460,25 @@ a:hover {
 
 .main-footer .footer-top .users, .main-footer .footer-top .tags {
   list-style: none;
+  margin: 0 5px;
+  padding: 0;
 }
 
 .main-footer .footer-top .users > li, .main-footer .footer-top .tags > li {
   padding: 0;
-  margin: 20px 0;
+  font-size: 0.8em;
 }
 
 .main-footer .footer-top .users a, .main-footer .footer-top .tags a {
   text-transform: capitalize;
   font-size: 18px;
+  padding: 0;
+  margin: 4px 0;
+}
+
+.main-footer .footer-top .tags {
+  margin: 0 5px 40px;
+  padding: 0;
 }
 
 .main-footer .footer-top .tags li {
@@ -470,10 +488,119 @@ a:hover {
 .main-footer .footer-top .tags li a {
   padding: 6px;
   background-color: #5a8292;
+  font-size: 1.2em;
 }
 
 .main-footer .footer-top .tags li:hover a {
   color: #5a8292;
   background-color: #ffffff;
+}
+
+.main-footer .footer-bottom {
+  background-color: #eee;
+}
+
+.main-footer .footer-bottom .soc-net ul {
+  margin: 25px 0;
+}
+
+.main-footer .footer-bottom .soc-net ul li {
+  display: inline-block;
+}
+
+.main-footer .footer-bottom .soc-net ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+.main-footer .footer-bottom .soc-net ul li a.ks {
+  background-image: url("./../img/krojacevaskola.png");
+}
+
+.main-footer .footer-bottom .soc-net ul li a.tw {
+  background-image: url("./../img/twitter.png");
+}
+
+.main-footer .footer-bottom .soc-net ul li a.yt {
+  background-image: url("./../img/youtube.png");
+}
+
+.main-footer .footer-bottom .soc-net ul li a.in {
+  background-image: url("./../img/instagram.png");
+}
+
+.main-footer .footer-bottom .soc-net ul li a.fb {
+  background-image: url("./../img/facebook.png");
+}
+
+.main-footer .footer-bottom .footer-nav ul {
+  margin: 25px 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+.main-footer .footer-bottom .footer-nav ul > li > a {
+  font-size: 13px;
+}
+
+.main-footer .footer-bottom .footer-nav ul > li > a::after {
+  content: " ";
+  width: 0;
+  display: block;
+  height: 2px;
+  background: #acdacf;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+
+.main-footer .footer-bottom .footer-nav ul > li > a:hover::after {
+  width: 100%;
+}
+
+#back-to-top {
+  background-image: url("./../img/back-to-top-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px 20px;
+  background-color: rgba(133, 195, 220, 0.4);
+  display: none;
+  /*Hidden*/
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#back-to-top:hover {
+  background-image: url("./../img/back-to-top-blue.png");
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 768px) {
+  .main-footer .footer-bottom .soc-net ul {
+    text-align: left;
+    padding: 0;
+  }
+  .main-footer .footer-bottom .soc-net ul li a {
+    width: 25px;
+    height: 25px;
+  }
+  #back-to-top {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

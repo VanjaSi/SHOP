@@ -1,6 +1,5 @@
 
 .main-header{
-    // max-width: 100%;
     .top-header{
         min-height: 25px;
         margin: 10px;
@@ -14,21 +13,16 @@
         align-items: center;
         .navbar{
             position: relative;
-
             padding:0;
             button.navbar-toggler{
                 border: none;
                 outline: none;
-              
                 span.navbar-toggler-icon{
                     width: 20px;
                     height: 30px;
-
                 }
-                
                 &:hover, &:active, &:focus .navbar-toggler-icon{
                     outline: 0;
-    
                 }
             }
             .navbar-collapse{
@@ -153,11 +147,7 @@
             position: absolute;
             left: 200px;
         }
-        // .navbar-nav .nav-item a.nav-link:hover {
-        //     color:$link-hover;
-        //     // border-bottom: 2px solid $nav-active;
-        //     // transition: color 0.3s ease-in;
-        // }
+       
     }
     .main-header .nav-container .navbar {
 
@@ -177,6 +167,4 @@
             }
         }
     }
-    
-    
 }
