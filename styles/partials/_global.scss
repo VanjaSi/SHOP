@@ -25,6 +25,22 @@ a:hover{
     text-decoration: none;
 }
 
+.active{
+    
+    &::before{
+        content: '';
+        display: block;
+        margin: 0 0  -6px 6px;
+        width: 50px;
+        height: 5px;
+        background-color: $main-color-nav;
+        border-radius: 2px;
+    }
+    
+}
+h3.active::before{
+    margin: 0;
+}
 
 
 

@@ -41,8 +41,8 @@
            li{
                display: inline-block;
                a{
-               padding: 6px;
-               background-color: lighten($color: $footer-color, $amount: 0.3);
+                padding: 6px;
+                background-color: $main-color-nav;
                 font-size: 1.2em;
 
                }

@@ -1,0 +1,125 @@
+
+.back{
+    display: block;
+    background-image: url("../img/arrow-gray.png");
+    background-repeat: no-repeat;
+    background-position: 0 25px;
+    padding: 20px;
+    text-transform: capitalize;
+    margin-top:50px;
+
+}
+
+.product-details{
+    
+    .white-bkg{
+        background-color: #fff;
+        margin-bottom: 20px;
+       
+    }
+    .mini-gallery{
+      margin-bottom: 70px;
+    }
+    h2{
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    p{
+        color: #666;
+        margin-bottom: 25px;
+        
+    }
+    .order-holder{
+        .terms-holder{
+            margin: 27px 0;
+            .color-picker{
+               li{
+                   border: 1px solid black;
+                   display: inline-block;
+                   width: 20px;
+                   height: 20px;
+                   text-indent: -9999px;
+                   background-color: blueviolet;
+                   cursor: pointer;
+                   margin: 0 2px;
+               }
+            }
+            >span{
+                display: inline;
+            }
+            > span:not(.term), .color-picker{
+                float: right;
+            }
+            .price{
+                font-size: 20px;
+            }
+            .quantity{
+                input{
+                    width: 30px;
+                    background-color: transparent;
+                    border: 1px solid #666;
+                }
+            }
+        }
+        a.add-to-cart{
+            background-color: $nav-active;
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+            margin: 20px 0 50px;
+            transition: all .3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+    }
+   
+}
+.product-section{
+    margin: 50px 0;
+    h3{
+        margin-bottom: 20px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        color: #000;
+        
+    }
+}
+
+@media (min-width:768px){
+    .product-details{
+        .white-bkg{
+            a {
+            
+                transition: all .3s;
+                &:hover {
+                  opacity: .6;
+                }
+              }
+        }
+        .mini-gallery{
+            
+            a {
+            
+              transition: all .3s;
+              &:hover {
+                opacity: .6;
+              }
+              img {
+                width: 44px;
+              }
+            }
+        }
+        .order-holder {
+            .terms-holder{
+                width: 50%;
+            }
+            a.add-to-cart{
+                width: 50%;
+            }
+        }
+        
+    }
+}

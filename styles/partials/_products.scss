@@ -3,6 +3,9 @@
         .img-holder{
             position: relative;
             overflow: hidden;
+            img{
+                width: 100%;
+            }
             ul.icon-holder{
                 background-color: transparentize($color: $footer-background, $amount: 0.1);
                 height: 50px;
@@ -31,7 +34,6 @@
             >li{
                 width: 20px;
                 height: 20px;
-                background-color:red;
                 margin-right: 5px;
                 cursor: pointer;
             }
